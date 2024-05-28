@@ -17,9 +17,9 @@ def patch_streamlit_for_ads():
 
     # Creating ads HTML
     script_tag = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9139235018955761" crossorigin="anonymous"></script>"""
-    script_tag = BeautifulSoup(ads_html, "html.parser")
+    script_tag = BeautifulSoup(script_tag, "html.parser")
     meta_tag = """<meta name="google-adsense-account" content="ca-pub-9139235018955761">"""
-    meta_tag = BeautifulSoup(ads_html, "html.parser")
+    meta_tag = BeautifulSoup(meta_tag, "html.parser")
 
     # adding tags to the header and save the file
     index_html.head.append(script_tag)
