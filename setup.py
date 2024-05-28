@@ -36,9 +36,9 @@ class CustomInstallCommand(install):
         patch_streamlit_for_ads()
 
 setup(
-    name="streamlit_ads",
+    name="streamlit_ads_patch",
     version="0.1",
-    packages=["streamlit_ads"],
+    packages=["streamlit_ads_patch"],
     install_requires=[
         "beautifulsoup4",
         "lxml",
